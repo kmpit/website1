@@ -1,4 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+/*@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);*/
+@font-face {
+    font-family: Pontano Sans;
+    src: url("github.com/kmpit/kmpit.github.io/fonts/PontanoSans-Regular.ttf"); 
+	format('truetype');
+}
 
 /*Style sheet for index.html*/
 
