@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+@font-face {
+    font-family: "Pontano Sans";
+    src: url("fonts/PontanoSans-Regular.ttf");
+}
 
 /*Style sheet for index.html*/
 
