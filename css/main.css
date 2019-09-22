@@ -1,18 +1,24 @@
-/*Style sheet for WebsitePA.html*/
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+
+/*Style sheet for index.html*/
 
 /*Basic text/headings*/
-body {	font-family: "Tahoma", Geneva, sans-serif;
-		font-size: 14pt;
-		color: rgb(89,89,89)}
+body {	font-family: "Pontano Sans";
+		font-size: 18pt;
+		color: #FFFFFF;}
 		
-h1 {	font-size: 38pt;
-		margin-bottom:3px}
+h1 {	font-size: 95px;
+		margin-bottom:60px;
+		margin-top:0px;
+		color: #FFFFFF;
+		text-align: center; }
 
-h2 {	background-color:#f0b2fa;
-		font-family: "Brush Script MT", cursive; 
-		font-size: 28pt;
+h2 {	background-color: rgba(5,124,175,0.3);
+		font-family:"Pontano Sans";
+		font-size: 40px;
 		color: white;
-		text-align: center}
+		text-align: center;
+		padding:4px;}
 
 h4 {	padding: none;
 		font-size: 11pt;
@@ -21,19 +27,29 @@ h4 {	padding: none;
 		letter-spacing: 2px}
 
 /*Titleblock*/
-div.titleblock {	background-image: url(flower.jpg);
-					background-size: 100%;
-					background-repeat: no-repeat;
-					color: white;
+div.wrapper {		max-width: 100%;
 					padding-left: 10%;
+					padding-right: 10%; 
 					padding-top: 5%;
-					padding-bottom: 5%}
+					padding-bottom: 5%
+			}
+
+div.titleblock { 	max-width: 100%;	}
+
+div.centered {		position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%);
+					padding: 30px;}
 		
 /*Tables*/
 /*table1*/
-table.table1 {table-layout: fixed}
 
-table.table1 td {width: 100px}
+table.table1 { margin-left: auto; 
+				margin-right: auto; }
+				
+table.table1 td { 	padding-right: 10px;
+					text-align: center;}
 		
 /*table2*/
 table.table2 tr {	text-align: center;
@@ -53,7 +69,7 @@ u1	{	list-style-image: url(bullet.jpg)}
 li 	{	padding-bottom: 8px}
 
 /*Images*/	
-img {	width: 80%}
+img {	width: 100%}
 
 /*Forms*/
 input[type=text] {	width: 100%;
