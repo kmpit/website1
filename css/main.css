@@ -1,9 +1,4 @@
-/*@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);*/
-@font-face {
-    font-family: Pontano Sans;
-    src: url("github.com/kmpit/kmpit.github.io/fonts/PontanoSans-Regular.ttf"); 
-	format('truetype');
-}
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
 
 /*Style sheet for index.html*/
 
@@ -81,6 +76,3 @@ input[type=text] {	width: 100%;
 					border: 4px solid;
 					border-color: #f0b2fa;
 					border-radius: 5px}
-
-
-				
