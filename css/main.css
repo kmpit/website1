@@ -8,21 +8,21 @@
 
 /*Text*/
 body {	font-family: "Pontano Sans";
-		font-size: 2vw;
+		font-size: 1.5vw;
 		color: #000000;
 		padding-bottom:1vw;}
 		
 h1 {	font-size: 6vw;
-		margin-block-start: 1vw;
+		margin-block-start: 28vw;
 		margin-block-end: 1vw;
 		color: #FFFFFF;
 		text-align: center;}
 
-h2 {	background-color: rgba(5,124,175,0.3);
-		font-size: 3vw;
-		color: white;
+h2 {	font-size: 3vw;
+		color: rgba(5,124,175,0.3);
 		text-align: center;
-		padding:4px;}
+		padding:0;
+		margin:0;}
 		
 h3 {	font-size: 1.5vw;
 		color: #FFFFFF;
@@ -30,13 +30,21 @@ h3 {	font-size: 1.5vw;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		margin-block-start: 0em;
-		margin-block-end: 0em;}
+		margin-block-end: 0em;
+		text-transform: uppercase;
+	}
 
-h4 {	padding: none;
-		font-size: 11pt;
-		font-weight: normal;
-		font-style: italic;
-		letter-spacing: 2px}
+h4 {	
+	font-size:2vw;
+	margin-bottom:0;
+	}
+h5 {
+	color: #C8C8C8;
+	font-size: 1.5vw;
+	text-transform: uppercase;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
 
 /*Containers*/
 div.wrapper {		max-width: 100%;
@@ -55,17 +63,26 @@ div.titleblock { 	max-width: 100%;
 }
 
 div.centered {		position: absolute; 
-					top: 50%;
+					top: 0%;
 					left: 50%;
-					transform: translate(-50%, -30%);
+					transform: translate(-50%);
 					padding: 0;}
 					
 div.left_float {	max-width: 60%;
 					position: float;}
 					
-div.column {
+div.column_third {
   float: left;
-  width: 33.33%;
+  width: 31.33%;
+  margin-left: 1%; 
+  margin-right: 1%; 
+}
+
+div.column_half {
+  float: left;
+  width: 48%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 div.row:after {
@@ -84,27 +101,45 @@ div.button {		display: inline-block;
 					border-width: 5px;
 					border-color: #FFFFFF;		
 			}
+			
+div.section_name {	
+					margin-block-start: 1em;
+					margin-block-end:1 em;
+					display: inline-block;
+					padding-left: 10px;
+					padding-right: 10px; 
+					padding-top: 5px;
+					padding-bottom: 5px;
+					border-style: solid;
+					border-width: 5px;
+					border-color: rgba(5,124,175,0.3);		
+			}
 
-a { color: white; 
-	text-decoration: none;
-}
-				
-		
 /*Tables*/
-/*table1*/
 table.table1 { 	margin-left: auto; 
 				margin-right: auto; 
 				margin-block-end: 32px;}
 				
-table.table1 td { 	padding-right: 10px;
+table.table1 td { 	font-size:2vw;
+					padding-right: 10px;
 					text-align: center;
 					color: #FFFFFF;}
-		
+					
+/*Links*/
+a { color: white; 
+	text-decoration: none;
+}
+					
 /*Bulleted lists*/
-u1	{	padding-top:1em;
-		list-style: none outside none;}
+u1.big {	margin-block-start: 1em;
+			list-style-type:none;
+			list-style-position: outside;
+			font-size:2vw;}
+u1.small {	margin-block-start: 1em;
+			list-style: none outside none;
+			list-style-position: outside;}
 		
-li {display: list-item;}
+li {	margin: 1vw;}
 
 /*Images*/	
 img {	width: 100%; 
