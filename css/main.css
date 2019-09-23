@@ -1,28 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
 @font-face {
     font-family: "Pontano Sans";
-    src: url("fonts/PontanoSans-Regular.ttf");
+    src: url("http://github.com/kmpit/kmpit.github.io/master/fonts/PontanoSans-Regular.ttf");
 }
 
 /*Style sheet for index.html*/
 
-/*Basic text/headings*/
+/*Text*/
 body {	font-family: "Pontano Sans";
-		font-size: 18pt;
-		color: #FFFFFF;}
+		font-size: 2vw;
+		color: #000000;
+		padding-bottom:1vw;}
 		
-h1 {	font-size: 95px;
-		margin-bottom:60px;
-		margin-top:0px;
+h1 {	font-size: 6vw;
+		margin-block-start: 1vw;
+		margin-block-end: 1vw;
 		color: #FFFFFF;
-		text-align: center; }
+		text-align: center;}
 
 h2 {	background-color: rgba(5,124,175,0.3);
-		font-family:"Pontano Sans";
-		font-size: 40px;
+		font-size: 3vw;
 		color: white;
 		text-align: center;
 		padding:4px;}
+		
+h3 {	font-size: 1.5vw;
+		color: #FFFFFF;
+		text-align: center; 
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-block-start: 0em;
+		margin-block-end: 0em;}
 
 h4 {	padding: none;
 		font-size: 11pt;
@@ -30,7 +38,7 @@ h4 {	padding: none;
 		font-style: italic;
 		letter-spacing: 2px}
 
-/*Titleblock*/
+/*Containers*/
 div.wrapper {		max-width: 100%;
 					padding-left: 10%;
 					padding-right: 10%; 
@@ -38,45 +46,67 @@ div.wrapper {		max-width: 100%;
 					padding-bottom: 5%
 			}
 
-div.titleblock { 	max-width: 100%;	}
+div.titleblock { 	max-width: 100%;	
+					background-image: url("../images/porch.jpg");
+					background-size: cover;
+					width:100%;
+					height:60vw;
+					max-height:60vw;
+}
 
-div.centered {		position: absolute;
+div.centered {		position: absolute; 
 					top: 50%;
 					left: 50%;
-					transform: translate(-50%);
-					padding: 30px;}
+					transform: translate(-50%, -30%);
+					padding: 0;}
+					
+div.left_float {	max-width: 60%;
+					position: float;}
+					
+div.column {
+  float: left;
+  width: 33.33%;
+}
+
+div.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+					
+/*Elements*/
+div.button {		display: inline-block;
+					padding-left: 10px;
+					padding-right: 10px; 
+					padding-top: 5px;
+					padding-bottom: 5px;
+					border-style: solid;
+					border-width: 5px;
+					border-color: #FFFFFF;		
+			}
+
+a { color: white; 
+	text-decoration: none;
+}
+				
 		
 /*Tables*/
 /*table1*/
-
-table.table1 { margin-left: auto; 
-				margin-right: auto; }
+table.table1 { 	margin-left: auto; 
+				margin-right: auto; 
+				margin-block-end: 32px;}
 				
 table.table1 td { 	padding-right: 10px;
-					text-align: center;}
+					text-align: center;
+					color: #FFFFFF;}
 		
-/*table2*/
-table.table2 tr {	text-align: center;
-					padding-bottom: 2%}
-
-table.table2 td	{	width: 50%;
-					height: 20%;}
-		
-table.table2 p {	max-width: 80%;
-					text-align: justify;
-					margin-left: 10%;
-					margin-right: 10%}
-
 /*Bulleted lists*/
-u1	{	list-style-image: url(bullet.jpg)}
-
-li 	{	padding-bottom: 8px}
+u1	{	padding-top:1em;
+		list-style: none outside none;}
+		
+li {display: list-item;}
 
 /*Images*/	
-img {	width: 100%}
-
-/*Forms*/
-input[type=text] {	width: 100%;
-					border: 4px solid;
-					border-color: #f0b2fa;
-					border-radius: 5px}
+img {	width: 100%; 
+		height: 100%; 
+		object-fit: fill;}
