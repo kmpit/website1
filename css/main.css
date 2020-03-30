@@ -63,11 +63,14 @@ div.titleblock { 	max-width: 100%;
 					margin-block-end: 1.5vw;
 }
 
-div.centered {		position: absolute; 
+div.window {		position: absolute; 
 					top: 0%;
 					left: 50%;
 					transform: translate(-50%);
-					padding: 0;}
+					padding: 0;
+					text-align: center}
+
+div.centred_component {		display: inline-block; }
 					
 div.left_float {	max-width: 60%;
 					position: float;}
